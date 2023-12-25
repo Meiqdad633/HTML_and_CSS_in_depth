@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #43A047;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2E7D32;
+    }
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .home-button a {
+      background-color: #43A047;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .home-button a:hover {
+      background-color: #2E7D32;
+    }
+
+    /* Responsive Styles */
+
+    @media screen and (max-width: 480px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="home-button">
+      <a href="index.html">Buck to Home</a>
+    </div>
+    <h1>Purchase Page</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="">Select a product</option>
+          <option value="product1">Shirl’s Plant Therapy Variegated Arrowhead Vine</option>
+          <option value="product2">ZZ Plant</option>
+          <option value="product3">BijanTropicals Aralia Fabian</option>
+          <option value="product4">New Weeping Fig</option>
+          <option value="product5">Bloomscape Burgundy Rubber Tree</option>
+          <option value="product6">Urban Stems Pilea Peperomioides</option>
+          <option value="product7">Dieffenbachia</option>
+          <option value="product8">Peace Lily</option>
+          <option value="product9">Pink Anthurium</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+      </div>
+      <button type="submit">Purchase</button>
+    </form>
+  </div>
+</body>
+
+</html>
